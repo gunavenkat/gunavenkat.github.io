@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  padding: 60px 0;
+}
+.section-title {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #0d6efd;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.badge-skill {
+  margin: 3px;
+}
+footer {
+  background: #0d6efd;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+/* Timeline styles */
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 3px;
+  background: #0d6efd;
+  margin-left: -1.5px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  background: #0d6efd;
+  border-radius: 50%;
+  top: 0;
+}
+.timeline-item .card {
+  border-left: 4px solid #0d6efd;
+}
+.assets-column {
+  border-left: 1px solid #e9ecef;
+  padding-left: 15px;
+}
