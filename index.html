@@ -1,280 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Venkata Gunasekhar Vazrala - Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkata Gunasekhar Vazrala | Python & Automation Engineer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div class="cursor-follower" id="cursor"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <!-- Header -->
-    <header class="text-center">
-      <h1 class="fw-bold">Venkata Gunasekhar Vazrala</h1>
-      <p class="lead">Python & Automation Engineer | MSc in IoT @ DCU</p>
-      <a
-        href="mailto:venkatagunasekharv@gmail.com"
-        target="_blank"
-        class="btn btn-light btn-sm m-1"
-        >📧 Email Me</a
-      >
-      <a
-        href="https://linkedin.com/in/venkata-gunasekhar-v-8a1049193"
-        target="_blank"
-        class="btn btn-light btn-sm m-1"
-        >📋 LinkedIn</a
-      >
-      <a
-        href="https://github.com/gunavenkat"
-        target="_blank"
-        class="btn btn-light btn-sm m-1"
-        >👨‍💻 GitHub</a
-      >
+    <header id="header">
+        <nav>
+            <div class="logo">VGV</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
-      <!-- About -->
-      <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <p class="text-center">
-          I am a Validation and Automation Engineer with expertise in Python,
-          TestStand, LabVIEW, and post-silicon validation. Currently pursuing an
-          MSc in Electronic and Computer Technology (IoT) at Dublin City
-          University, I specialize in automation frameworks, CI/CD pipelines,
-          backend development, and scalable validation systems.
-        </p>
-      </section>
-
-      <!-- Experience Timeline -->
-      <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <ul class="timeline">
-          <li class="timeline-item">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Texas Instruments</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Automation & Validation Engineer (2024 - 2025)
-                </h6>
-                <ul>
-                  <li>
-                    Reduced release effort by 95% through optimized automation.
-                  </li>
-                  <li>
-                    Enhanced Django dashboards, cutting load times by 60%.
-                  </li>
-                  <li>
-                    Automated compliance checks & build validation across 70+
-                    configs.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-success">Soliton Technologies</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Senior Project Engineer (2023 - 2025)
-                </h6>
-                <ul>
-                  <li>
-                    Automated sensor device validation, reducing effort by 93%.
-                  </li>
-                  <li>
-                    Built reusable Python APIs for measurement frameworks.
-                  </li>
-                  <li>
-                    Developed Django-based web apps for magnetic sensor
-                    simulation.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-info">Soliton Technologies</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Engineering Intern (2023)
-                </h6>
-                <p>
-                  Trained in Python, LabVIEW, TestStand, won 1st place in
-                  internal LabVIEW speed coding contest.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-warning">
-                  Integral Coach Factory (ICF)
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Intern (2022)</h6>
-                <p>
-                  Hands-on troubleshooting and repairing telecom devices and
-                  electronic chips at ETRC.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Projects with Assets column -->
-      <section id="projects">
-        <h2 class="section-title">Projects & Assets</h2>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-md-6 col-lg-6">
-                <div class="card project-card shadow-sm mb-4">
-                  <div class="card-body">
-                    <h5 class="card-title">Personal Expense Tracker</h5>
-                    <p class="card-text">
-                      Flask app deployed on IBM Kubernetes to track expenses.
-                    </p>
-                    <a href="#" target="_blank" class="btn btn-primary btn-sm"
-                      >🔗 View Project</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <div class="card project-card shadow-sm mb-4">
-                  <div class="card-body">
-                    <h5 class="card-title">Eye Disease Classification</h5>
-                    <p class="card-text">
-                      Deep learning with MATLAB for medical image analysis.
-                    </p>
-                    <a href="#" target="_blank" class="btn btn-primary btn-sm"
-                      >🔗 View Project</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <div class="card project-card shadow-sm mb-4">
-                  <div class="card-body">
-                    <h5 class="card-title">Remote Communicator</h5>
-                    <p class="card-text">
-                      Arduino + NRF module communication system for rural areas.
-                    </p>
-                    <a href="#" target="_blank" class="btn btn-primary btn-sm"
-                      >🔗 View Project</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <div class="card project-card shadow-sm mb-4">
-                  <div class="card-body">
-                    <h5 class="card-title">Regenerative Braking System</h5>
-                    <p class="card-text">
-                      Arduino-based project generating power during vehicle
-                      braking.
-                    </p>
-                    <a href="#" target="_blank" class="btn btn-primary btn-sm"
-                      >🔗 View Project</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 assets-column">
-            <h5 class="text-center">Assets</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="assets/expense-tracker.svg" target="_blank"
-                  >Personal Expense Tracker (SVG)</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="assets/eye-classification.svg" target="_blank"
-                  >Eye Disease Classification (SVG)</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="assets/remote-communicator.svg" target="_blank"
-                  >Remote Communicator (SVG)</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="assets/regenerative-braking.svg" target="_blank"
-                  >Regenerative Braking (SVG)</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills (unchanged) -->
-      <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="text-center">
-          <span class="badge bg-primary badge-skill">Python</span>
-          <span class="badge bg-success badge-skill">C</span>
-          <span class="badge bg-success badge-skill">C++</span>
-          <span class="badge bg-dark badge-skill">Rust</span>
-          <span class="badge bg-warning text-dark badge-skill">Django</span>
-          <span class="badge bg-warning text-dark badge-skill">Flask</span>
-          <span class="badge bg-info text-dark badge-skill"
-            >Robot Framework</span
-          >
-          <span class="badge bg-secondary badge-skill">Docker</span>
-          <span class="badge bg-secondary badge-skill">Jenkins</span>
-          <span class="badge bg-danger badge-skill">LabVIEW</span>
-          <span class="badge bg-danger badge-skill">TestStand</span>
-        </div>
-      </section>
-
-      <!-- Education Timeline -->
-      <section id="education">
-        <h2 class="section-title">Education</h2>
-        <ul class="timeline">
-          <li class="timeline-item">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-info">Dublin City University</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  MSc in Electronic & Computer Technology (IoT), 2025-2026
-                </h6>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-success">
-                  RMK Engineering College - Anna University
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  BE in Electronics & Communication, 2019-2023
-                </h6>
-                <p>CGPA: 9.19 | Embedded Systems COE | Eco Club Member</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-greeting">Hello, I'm</div>
+            <h1>Venkata Gunasekhar Vazrala</h1>
+            <p class="subtitle">Python & Automation Engineer</p>
+            <p class="description">
+                Passionate Validation and Automation Engineer specializing in Python, TestStand, and LabVIEW. 
+                Currently pursuing MSc in Electronic and Computer Technology (IoT) at Dublin City University. 
+                Expert in building scalable automation frameworks, optimizing CI/CD pipelines, and delivering 
+                efficient solutions through innovative technology.
+            </p>
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-user"></i>
+                    Discover My Journey
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about reveal">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Release Effort Reduction</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">93%</div>
+                    <div class="stat-label">Validation Automation</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">70+</div>
+                    <div class="stat-label">Configs Automated</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Engineers Impacted</div>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>I am a dedicated Validation and Automation Engineer with a proven track record of optimizing complex systems and delivering scalable solutions. Currently based in Dublin, Ireland, while pursuing my Master's degree in Electronic and Computer Technology with a focus on IoT.</p>
+                
+                <p>My expertise spans across Python development, automation framework design, and post-silicon validation. I have successfully reduced release efforts by 95% and validation time by 93% through innovative automation solutions. My experience includes working with industry-leading companies like Texas Instruments and Soliton Technologies.</p>
+
+                <p>I'm passionate about leveraging cutting-edge technology to solve complex engineering challenges and am always eager to collaborate on projects that push the boundaries of automation and validation.</p>
+            </div>
+            </div>
+
+            <div class="skills-grid">
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Rust</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-globe"></i> Web Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Robot Framework</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-tools"></i> DevOps & Cloud</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-cog"></i> Validation & Automation</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">NI LabVIEW</span>
+                    <span class="skill-tag">TestStand</span>
+                    <span class="skill-tag">Instrument Studio</span>
+                    <span class="skill-tag">PXI Systems</span>
+                    <span class="skill-tag">MATLAB</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2>Professional Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-date">June 2024 - August 2025</div>
+                <div class="timeline-title">Automation & Validation Engineer</div>
+                <div class="timeline-company">Texas Instruments, Bengaluru, India</div>
+                <div class="timeline-description">Full-time on-site contract position focusing on automation infrastructure and validation optimization for semiconductor testing processes.</div>
+                <ul class="achievements">
+                    <li>Reduced release effort by 95% (from 1 week to 5 hours) through infrastructure optimization and parallel execution</li>
+                    <li>Cut dashboard load times by 60% by enhancing Django-based performance monitoring systems</li>
+                    <li>Automated compliance checks, build validation, and report generation across 70+ configurations</li>
+                    <li>Led end-to-end automation development with cross-functional collaboration involving 2+ leads/managers</li>
+                    <li>Maintained and upgraded CI/CD pipelines ensuring seamless integration during release cycles</li>
+                    <li>Developed backend APIs and implemented Django features for static analysis report visibility</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Jenkins</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">Robot Framework</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">June 2023 - August 2025</div>
+                <div class="timeline-title">Senior Project Engineer</div>
+                <div class="timeline-company">Soliton Technologies, Coimbatore, India</div>
+                <div class="timeline-description">Developed comprehensive post-silicon validation frameworks and web-based simulation platforms for magnetic sensor technologies.</div>
+                <ul class="achievements">
+                    <li>Validated 5+ current and angular sensor device models using advanced NI instruments and hardware setups</li>
+                    <li>Reduced validation effort by ~93% by automating measurement loops (3 days to 5 hours)</li>
+                    <li>Designed and implemented 20+ TestStand measurement templates with optimized workflows</li>
+                    <li>Built Python-based instrument session abstractions enabling reusable validation processes</li>
+                    <li>Framework adoption by 10+ engineers with integrated CI/CD reducing manual update overhead</li>
+                    <li>Developed Django web framework simulating 25+ magnetic sensor models with 90%+ test coverage</li>
+                    <li>Automated deployment processes using Jenkins meeting strict production deadlines</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">TestStand</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">GitLab CI/CD</span>
+                    <span class="tech-tag">NI Instruments</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">January 2023 - May 2023</div>
+                <div class="timeline-title">Engineering Intern</div>
+                <div class="timeline-company">Soliton Technologies, Coimbatore, India</div>
+                <div class="timeline-description">Intensive training program focusing on automation frameworks, validation methodologies, and software development best practices.</div>
+                <ul class="achievements">
+                    <li>Won 1st place in company-level internal LabVIEW speed coding competition</li>
+                    <li>Extensive training in Python, LabVIEW, TestStand, and comprehensive QA methodologies</li>
+                    <li>Developed strong foundation in Agile and Scrum development practices</li>
+                    <li>Actively contributed to automation framework development, testing, and optimization</li>
+                    <li>Collaborated on improving validation process efficiency and system reliability</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">TestStand</span>
+                    <span class="tech-tag">Agile/Scrum</span>
+                    <span class="tech-tag">QA Testing</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-title">Electronics Intern</div>
+                <div class="timeline-company">ICF Chennai, India</div>
+                <div class="timeline-description">Hands-on experience in telecommunication device repair and electronic system diagnostics at Electronics Testing and Repair Center.</div>
+                <ul class="achievements">
+                    <li>Gained practical experience in troubleshooting telecommunication devices and electronic chips</li>
+                    <li>Developed expertise in electronic diagnostics and advanced repair techniques</li>
+                    <li>Performed system-level testing and quality assurance for critical communication equipment</li>
+                    <li>Enhanced understanding of hardware-software integration in telecommunication systems</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Electronic Diagnostics</span>
+                    <span class="tech-tag">Hardware Repair</span>
+                    <span class="tech-tag">System Testing</span>
+                    <span class="tech-tag">Telecommunications</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card reveal" onclick="window.open('https://github.com/gunavenkat', '_blank')">
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-microchip"></i>
+                        Post-Silicon Validation Framework
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Comprehensive Python and TestStand-based framework for validating magnetic sensor devices using advanced NI instruments. 
+                        Features automated measurement loops, reusable templates, and scalable validation processes that reduced manual effort by 93%.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TestStand</span>
+                        <span class="tech-tag">LabVIEW</span>
+                        <span class="tech-tag">NI PXI</span>
+                        <span class="tech-tag">Instrument Control</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" onclick="window.open('https://github.com/gunavenkat', '_blank')">
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-globe"></i>
+                        Magnetic Sensors Simulation Platform
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Django-based web framework simulating 25+ magnetic sensor models with comprehensive REST API backend. 
+                        Features SQL integration, automated Jenkins deployment, and 90%+ unit test coverage for enterprise-grade reliability.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" onclick="window.open('https://github.com/gunavenkat/Personal-Expense-Tracker', '_blank')">
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-chart-line"></i>
+                        Personal Expense Tracker
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Flask-based application deployed on IBM Kubernetes with cloud-native architecture. 
+                        Features comprehensive expense tracking, intelligent categorization, data visualization, and secure cloud deployment.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">IBM Cloud</span>
+                        <span class="tech-tag">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" onclick="window.open('https://github.com/gunavenkat/EYE-DISEASE-CLASSIFICATION-USING-MATLAB', '_blank')">
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-eye"></i>
+                        AI Eye Disease Classification
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Advanced neural network solution for medical image analysis using MATLAB deep learning toolbox. 
+                        Processes color fundus images with sophisticated algorithms achieving accurate disease detection for improved patient outcomes.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Neural Networks</span>
+                        <span class="tech-tag">Medical AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" onclick="window.open('https://github.com/gunavenkat/Remote-Communication-using-NRF-modules', '_blank')">
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-wifi"></i>
+                        Remote Communication System
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Arduino-based wireless communication system utilizing NRF modules for reliable long-range connectivity. 
+                        Designed for remote areas with challenging environments, featuring robust signal processing and error correction.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">NRF Modules</span>
+                        <span class="tech-tag">Wireless Communication</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" onclick="window.open('https://github.com/gunavenkat/Regenerative-Braking-System', '_blank')">
+                <div class="project-header">
+                    <div class="project-title">
+                        <i class="fas fa-bolt"></i>
+                        Regenerative Braking System
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Innovative energy recovery system for vehicles using motor-as-generator technology. 
+                        Features intelligent Arduino-based control system for optimal energy recovery, power management, and sustainable transportation solutions.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Power Electronics</span>
+                        <span class="tech-tag">Motor Control</span>
+                        <span class="tech-tag">Energy Recovery</span>
+                        <span class="tech-tag">Sustainable Tech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Let's Build Something Amazing</h2>
+            <p class="contact-subtitle">Ready to collaborate on innovative projects? Let's connect and create the future together.</p>
+        
+        <div class="contact-info">
+            <div class="contact-item reveal">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:venkatagunasekharv@gmail.com" class="email-link">venkatagunasekharv@gmail.com</a>
+            </div>
+            <div class="contact-item reveal">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <a href="tel:+353899595337">(+353) 899-595-337</a>
+            </div>
+            <div class="contact-item reveal">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <span>Dublin, Ireland</span>
+            </div>
+            <div class="contact-item reveal">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/venkata-gunasekhar-v-8a1049193" target="_blank">Connect with me</a>
+            </div>
+            <div class="contact-item reveal">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <a href="https://github.com/gunavenkat" target="_blank">View my code</a>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-      <p>
-        © 2025 Venkata Gunasekhar Vazrala | Built with Bootstrap & Hosted on
-        GitHub Pages
-      </p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/venkata-gunasekhar-v-8a1049193" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/gunavenkat" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:venkatagunasekharv@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Venkata Gunasekhar Vazrala. Crafted with passion and precision.</p>
+            <p>Currently pursuing MSc in Electronic and Computer Technology (IoT) at Dublin City University</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
