@@ -134,7 +134,7 @@ document.querySelectorAll('.btn, .project-card, .skill-category, .contact-item')
 // Project card click handlers
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', () => {
-        window.open('https://github.com/gunavenkat?tab=repositories', '_blank');
+        window.open('https://github.com/venkata-vazrala?tab=repositories', '_blank');
     });
 });
 
